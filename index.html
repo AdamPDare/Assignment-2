@@ -39,11 +39,230 @@
             *{
                 box-sizing: border-box;
             }
+
+            ul{
+                list-style-type:none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: var(--main-bg-color);
+            }
+
+            li{
+                float: left;
+                
+                border-right: 1px solid var(--txt-border-color);
+            }
+
+            li a, .dropbtn{
+                display: inline-block;
+                color: var(--txt-border-color);
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                
+            }
+
+            li a:hover:not(.active){
+                border-bottom: 3px solid var(--txt-border-color);
+                border-top: 2px solid var(--txt-border-color);
+
+            }
+
+            li a:hover, .dropdown:hover .dropbtn{
+                border-bottom: 3px solid var(--txt-border-color);
+            }
+
+            li.dropdown{
+                display: inline-block;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: var(--main-bg-color);
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a{
+                color:var(--txt-border-color);
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover{border-bottom: var(--txt-border-color);}
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+            .column{
+                float: left;
+                width: 33.33%;
+                padding: 20px;
+                background-color: var(--main-bg-color);
+                
+            }
+
+            .card{
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+
+            }
+
+            div.card:hover{
+                border: 5px solid var(--txt-border-color);
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            @media screen and (max-width: 1000px) {
+                .HorizontalNav{
+                    float:none;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+
+                .column{
+                    width: 100%;
+                }
+
+
+                .footer{
+                    width: 100%;
+                }
+
+                
+
+                
+
+                
+            }
+
+            @media screen and (max-width: 800px){
+                .HorizontalNav{
+                    display: none;
+
+                }
+
+                .VerticalNav{
+                    display: block;
+                }
+
+                .footer{
+                    width: 100%;
+                }
+
+            }
+
+            .footer{
+                color: var(--txt-border-color);
+                padding: 20px;
+                background-color: #f1f1f1;
+                margin-top: 20px;
+                text-align: center;
+                
+            }
+
+
             
 
 
 
             </style>
         </head>
+        <div class="header">
+            <h1>Adam Dare's Website</h1>
+        </div>
+
+        <div style="padding-left:16px">
+
+        <div class="HorizontalNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pageStructure.html">Page Structure</a></li>
+                <li><a href="cssExternalTrial.html">CSS External File</a></li>
+                <li><a href="classElements.html">Class Elements</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">DropDown</a>
+                    <div class="dropdown-content">
+                        <a href="navigationbarDropdownTrial.html">Transformations</a>
+                        <a href="transitions.html">Transitions</a>
+                        <a href="columnsPage.html">Columns page</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <h2>Creating reactive Columns</h2>
+                    <p>
+                    To create three reactive equal columns, on this webpage, I 
+                    set the width of each column to 33.33% and to cover 100%
+                    of the width. Furthermore, I used the @media screen feature
+                    to set the maximum width of the screen and so that the 
+                    column positioning is affected by the size of the window
+                    making the webpage more compatible with mobile devices.
+                    Therefore, when the window is a specific size the columns
+                    and the navigation bar becomes vertical.Below it shows
+                    the CSS code to create the reactive columns
+                    </p>
+                    <code>
+                        &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
+                        &lt;style&gt;<br>
+    <pre>
+        code{
+                
+            .columnn{
+                float:left;
+                width:33.33%;
+                padding: 15px;
+            }
+                    
+            .row::after{
+                content:"";
+                display:table;
+                clear:both;
+            }
+    
+            @mediascreen and (max-width: 600px){
+                .column{
+                width: 100%;
+            }
+        }
+    </pre>
+                        &lt;style&gt;<br>
+                    
+                    </code>
+    
+                    
+    
+                    </div>
+                    
+                    
+       
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+        <body>
+
+        </body>
     </html>
 </html>
