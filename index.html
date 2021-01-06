@@ -154,11 +154,8 @@
             }
 
             @media screen and (max-width: 12000px) {
-               
-                .leftcolumn .rightcolumn{
-                    width: 100%;
-                    padding: 0;
-                }
+                
+                
                 .HorizontalNav{
                     display:block;
                 }
@@ -169,6 +166,7 @@
             }
 
             @media screen and (max-width: 800px){
+                
                 .overlay a{
                     font-size: 20px;
                 }
@@ -178,9 +176,12 @@
                 .verticalNav{
                     display:block;
                     width: 100%
-                    
                 
-                };
+                }
+                .leftcolumn, .rightcolumn{
+                    width: 100%;
+                    padding: 0;
+                }
 
                 
 
@@ -242,65 +243,82 @@
             </div>
     
             <div class="row">
-                <div class="column">
+                <div class="leftcolumn">
                     <div class="card">
                         <h2>Creating reactive Columns</h2>
                         <p>
-                        To create three reactive equal columns, on this webpage, I 
-                        set the width of each column to 33.33% and to cover 100%
-                        of the width. Furthermore, I used the @media screen feature
-                        to set the maximum width of the screen and so that the 
-                        column positioning is affected by the size of the window
-                        making the webpage more compatible with mobile devices.
-                        Therefore, when the window is a specific size the columns
-                        and the navigation bar becomes vertical.Below it shows
-                        the CSS code to create the reactive columns
+                            To create two reactive equal columns, on this webpage, I
+                            needed to set the width of each column to 50% and for both
+                            the columns to cover the whole webpage width. TO enable them
+                            to be reactive I used the @mediascreen feature which allowed me 
+                            to dictate whether the webpage will display both columns for people
+                            viewing the website on a PC or just one column for people using a 
+                            mobile phone. So the column positioning is affected by the 
+                            window size of the webpage allowing the website to be more 
+                            compatible with every device. 
+                            
                         </p>
-                        
                         <code>
                             &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
                             &lt;style&gt;<br>
         <pre>
             code{
-                    
-                .columnn{
+                .leftcolumn{
                     float:left;
-                    width:33.33%;
-                    padding: 15px;
+                    width: 50%;
+                    padding-left: 20px;
+                    background-color: var(--main-bg-color);
                 }
-                        
+    
+                .rightcolumn{
+                    float: left;
+                    width: 50%;
+                    background-color: var(--main-bg-color);
+                    padding-left: 20px;
+                }
+    
+                
+    
+                .card{
+                    background-color: white;
+                    padding: 20px;
+                    margin-top: 20px;
+    
+                }
+    
+                div.card:hover{
+                    border: 5px solid var(--txt-border-color);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+    
                 .row::after{
-                    content:"";
-                    display:table;
-                    clear:both;
+                    content: "";
+                    display: table;
+                    clear: both;
+                }    
+                @media screen and (max-width: 800px){
+                    .leftcolumn, .rightcolumn{
+                        width: 100%;
+                        padding: 0;
+                    }
+    
                 }
         
-                @mediascreen and (max-width: 600px){
-                    .column{
-                    width: 100%;
-                }
+                
             }
         </pre>
                             &lt;style&gt;<br>
                         
                         </code>
-        
-                        
-        
-                        </div>
-                        
-                        
-           
-                        
-                    </div>
                     </div>
                 </div>
-            </div>
+                
+                
 
             
 
             <div class="row">
-                <div class="column">
+                <div class="rightcolumn">
                     <div class="card">
                         <h2>Navigation Bar with Dropdown</h2>
                         <p>
