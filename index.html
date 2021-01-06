@@ -269,7 +269,42 @@
                 <div class="rightcolumn">
                     <div class="card">
                         <h2>Internal CSS</h2>
-                        
+                        <p>
+                            Internal CSS implementation is where the CSS code is 
+                            found within the header section of the HTML page and 
+                            within the style element. This CSS code will only 
+                            affect the design of the webpage they are implemented
+                            into; this method of implementing CSS allows you to use
+                            classes and IDs. This enables you to style and design 
+                            multiple HTML elements, on the webpage, without repeating
+                            lines of code as frequently. Also, using this method enables
+                            you to change the design of all the elements that are tagged
+                            on the webpage. 
+                            An example of Internal CSS is shown below and it is the class
+                            used to format the code snippets on my webpage:
+                        </p>
+                        <code>
+                            &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
+        <pre>
+            &lt;head&gt;
+                &lt;style&gt;
+                    code{
+                        font-family: monospace;
+                        color: chocolate;
+                                    
+                    } 
+                &lt;/style&gt;
+            &lt;/head&gt;
+
+                            </pre>
+
+                        </code>
+
+                    </div>
+                </div>
+                <div class="leftcolumn">
+                    <div class="card">
+                        <h2>External CSS</h2>
                     </div>
                 </div>
                 <div class="leftcolumn">
@@ -291,50 +326,50 @@
                             &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
                             &lt;style&gt;<br>
         <pre>
-            code{
-                .leftcolumn{
-                    float:left;
-                    width: 50%;
-                    padding-left: 20px;
-                    background-color: var(--main-bg-color);
-                }
+    code{
+        .leftcolumn{
+        float:left;
+        width: 50%;
+            padding-left: 20px;
+            background-color: var(--main-bg-color);
+        }
     
-                .rightcolumn{
-                    float: left;
-                    width: 50%;
-                    background-color: var(--main-bg-color);
-                    padding-left: 20px;
-                }
+        .rightcolumn{
+            float: left;
+            width: 50%;
+            background-color: var(--main-bg-color);
+            padding-left: 20px;
+        }
     
                 
     
-                .card{
-                    background-color: white;
-                    padding: 20px;
-                    margin-top: 20px;
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
     
-                }
+        }
     
-                div.card:hover{
-                    border: 5px solid var(--txt-border-color);
-                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                }
+        div.card:hover{
+            border: 5px solid var(--txt-border-color);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
     
-                .row::after{
-                    content: "";
-                    display: table;
-                    clear: both;
-                }    
-                @media screen and (max-width: 800px){
-                    .leftcolumn, .rightcolumn{
-                        width: 100%;
-                        padding: 0;
-                    }
+        .row::after{
+            content: "";
+            display: table;
+            clear: both;
+        }    
+        @media screen and (max-width: 800px){
+            .leftcolumn, .rightcolumn{
+                width: 100%;
+                padding: 0;
+            }
     
-                }
+        }
         
                 
-            }
+    }
         </pre>
                             &lt;style&gt;<br>
                         
@@ -440,11 +475,7 @@
             </div>
         </div>
 
-        <div class="column">
-            <div class="card">
-                <h2>Inline CSS code to create this webpage</h2>
-
-            </div>
+        
             
         </div>
 
