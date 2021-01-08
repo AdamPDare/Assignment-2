@@ -110,7 +110,7 @@ body{
 .leftcolumn{
     float:left;
     width: 50%;
-    padding-left: 20px;
+   
     background-color: var(--main-bg-color);
     
 }
@@ -151,14 +151,14 @@ div.card:hover{
     padding-bottom: 2.5rem;
 }
 .footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    
+   
     padding: 20px;
     text-align: center;
     background: #ddd;
     margin-top: 20px;
-    height: 2.5rem;
+
+    
     
 }
 

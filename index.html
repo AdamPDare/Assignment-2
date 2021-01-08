@@ -47,158 +47,165 @@
                 <a href="columnsPage.html">Columns page</a>
             </div>
     
-            <div class="row">
-                <div class="leftcolumn">
-                    <div class="card">
-                        <h2 style = "color: red;">Inline CSS</h2>
-                        <p>
-                            Inline CSS implementation is where the CSS code 
-                            is applied to only a single HTML element. This CSS 
-                            code must be added in the same line as typing the HTML 
-                            tag and you must use the style element to apply the "style"
-                            you want to that specific element. Because of this, it makes
-                            Inline CSS less flexible as if you want to change the design
-                            of the element you have to edit them individually.
-                            An example of inline CSS is shown in the code snippet below:
-                        
-                        </p>
-                        <code>
-                            &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
-                            
-        <pre>
-            &lt;h2 style="color:red"&gt;&lt/h2&gt;
-        
-        </pre>
-                        </code>
-                        <p><a class="highlight" href="https://www.hostpapa.co.uk/knowledgebase/understanding-external-internal-inline-css-styles/">HostPapa Knowledgebase</a></p>
-                        <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
-                    </div>
-                </div>
+            
+        <div id="page-container">
+            <div id="content-wrap">
                 <div class="row">
-                    <div class="rightcolumn">
+                    <div class="leftcolumn">
                         <div class="card">
-                            <h2>Internal CSS</h2>
+                            <h2 style = "color: red;">Inline CSS</h2>
                             <p>
-                                Internal CSS implementation is where the CSS code is 
-                                found within the header section of the HTML page and 
-                                within the style element. This CSS code will only 
-                                affect the design of the webpage they are implemented
-                                into; this method of implementing CSS allows you to use
-                                classes and IDs. This enables you to style and design 
-                                multiple HTML elements, on the webpage, without repeating
-                                lines of code as frequently. Also, using this method enables
-                                you to change the design of all the elements that are tagged
-                                on the webpage. 
-                                An example of Internal CSS is shown below and it is the class
-                                used to format the code snippets on my webpage:
+                                Inline CSS implementation is where the CSS code 
+                                is applied to only a single HTML element. This CSS 
+                                code must be added in the same line as typing the HTML 
+                                tag and you must use the style element to apply the "style"
+                                you want to that specific element. Because of this, it makes
+                                Inline CSS less flexible as if you want to change the design
+                                of the element you have to edit them individually.
+                                An example of inline CSS is shown in the code snippet below:
+                            
                             </p>
                             <code>
                                 &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
+                                
             <pre>
-                &lt;head&gt;
-                    &lt;style&gt;
-                        code{
-                            font-family: monospace;
-                            color: chocolate;
-                                        
-                        } 
-                    &lt;/style&gt;
-                &lt;/head&gt;
-    
-                                </pre>
-    
+                &lt;h2 style="color:red"&gt;&lt/h2&gt;
+            
+            </pre>
                             </code>
                             <p><a class="highlight" href="https://www.hostpapa.co.uk/knowledgebase/understanding-external-internal-inline-css-styles/">HostPapa Knowledgebase</a></p>
                             <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
-    
                         </div>
-                </div>
-                </div>
-                <div class="leftcolumn">
-                    <div class="card">
-                        <h2>External CSS</h2>
-                        <p>
-                            External CSS implementation is where you use a seperate 
-                            Cascading Style Sheet (CSS) file; this will allow you to
-                            style your website and implement your CSS rules accross
-                            numerous HTML files and webpages. This is allows you to make
-                            changes to the CSS and it will implement them across the every
-                            HTML file that is linked to the CSS file, saving you time and
-                            effort. 
-                            I used External CSS to style my Header, Navigation bar and my
-                            columns so I can easily make changes to it and it is implemented
-                            across each webpage that I have created. 
-                            In the code snippet below it shows how I linked the CSS file
-                            to enable me to do this:
-                        </p>
-                        <code>
-                            &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
+                    </div>
+                    <div class="row">
+                        <div class="rightcolumn">
+                            <div class="card">
+                                <h2>Internal CSS</h2>
+                                <p>
+                                    Internal CSS implementation is where the CSS code is 
+                                    found within the header section of the HTML page and 
+                                    within the style element. This CSS code will only 
+                                    affect the design of the webpage they are implemented
+                                    into; this method of implementing CSS allows you to use
+                                    classes and IDs. This enables you to style and design 
+                                    multiple HTML elements, on the webpage, without repeating
+                                    lines of code as frequently. Also, using this method enables
+                                    you to change the design of all the elements that are tagged
+                                    on the webpage. 
+                                    An example of Internal CSS is shown below and it is the class
+                                    used to format the code snippets on my webpage:
+                                </p>
+                                <code>
+                                    &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
                 <pre>
                     &lt;head&gt;
-                        &lt;link href="layoutStyleSheet.css" rel"stylesheet"&gt;
+                        &lt;style&gt;
+                            code{
+                                font-family: monospace;
+                                color: chocolate;
+                                            
+                            } 
+                        &lt;/style&gt;
                     &lt;/head&gt;
-
-
-                </pre>
-                            
-                        </code>
-                        <p><a class="highlight" href="https://www.hostpapa.co.uk/knowledgebase/understanding-external-internal-inline-css-styles/">HostPapa Knowledgebase</a></p>
-                        <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
+        
+                                    </pre>
+        
+                                </code>
+                                <p><a class="highlight" href="https://www.hostpapa.co.uk/knowledgebase/understanding-external-internal-inline-css-styles/">HostPapa Knowledgebase</a></p>
+                                <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
+        
+                            </div>
                     </div>
-                </div>
-                <div class="rightcolumn">
-                    <div class="card">
-                        <h2>Assessment of CSS styles</h2>
-                        <h3>Inline CSS</h3>
-                        <p>
-                            Inline CSS is a easy and quick method of implementing CSS 
-                            and CSS rules that affect one html element. This is done via adding
-                            a style tag to the html tag; selectors mustnt be used. This method of
-                            implementing CSS allows you to easily test or preview any changes you
-                            you want to make to your website; also enables you to fix any errors or
-                            bugs quickly if needed. Furthermore, this can be done without the need
-                            for any external documents needing to be uploaded, unlike external css.   
-                        </p>
-                        <p>
-                            However, this method of implementing CSS should not be used throughout
-                            the html file as it will only set rules for one html element, so you would
-                            have to address each individual element, which is time consuming; makes the 
-                            structure of the document look unorganised and messy. Also, individually styling
-                            the elements will increase the webpages file size and increase the download times.
-                            Lastly, the inline css will only apply to the element upon that specific page,
-                            so if you used inline css for the navigation bar, only on that specific page the 
-                            rules will be applied to the navigation bar on one webpage.
-                        </p>
-                        <p>
-                            So, Inline CSS should only be used to test and preview any changes you want to make 
-                            to your document; quick-fix any errors or bugs that could be ocurring. 
-                        </p>
-                        <h3>Internal CSS</h3>
-                        <p>
-                            Internal CSS is an easy way of grouping various HTML elements via the use
-                            of ID selectors, and enable you to apply CSS rules to all the grouped elements.
-                            Inline CSS is implemented within the &lt;head&gt section with the use of the &lt;style&gt
-                            tag. This then allows you to add all the CSS code needed into just one HTML file, meaning
-                            you will not have to upload numerous files
-                        </p>
                     </div>
-                </div>
-                
-                
-                
-
-            
-
-        <div id="page-container">
-            <div id="content-wrap">
-                
+                    <div class="leftcolumn">
+                        <div class="card">
+                            <h2>External CSS</h2>
+                            <p>
+                                External CSS implementation is where you use a seperate 
+                                Cascading Style Sheet (CSS) file; this will allow you to
+                                style your website and implement your CSS rules accross
+                                numerous HTML files and webpages. This is allows you to make
+                                changes to the CSS and it will implement them across the every
+                                HTML file that is linked to the CSS file, saving you time and
+                                effort. 
+                                I used External CSS to style my Header, Navigation bar and my
+                                columns so I can easily make changes to it and it is implemented
+                                across each webpage that I have created. 
+                                In the code snippet below it shows how I linked the CSS file
+                                to enable me to do this:
+                            </p>
+                            <code>
+                                &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
+                    <pre>
+                        &lt;head&gt;
+                            &lt;link href="layoutStyleSheet.css" rel"stylesheet"&gt;
+                        &lt;/head&gt;
+    
+    
+                    </pre>
+                                
+                            </code>
+                            <p><a class="highlight" href="https://www.hostpapa.co.uk/knowledgebase/understanding-external-internal-inline-css-styles/">HostPapa Knowledgebase</a></p>
+                            <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
+                        </div>
+                    </div>
+                    <div class="rightcolumn">
+                        <div class="card">
+                            <h2>Assessment of CSS styles</h2>
+                            <h3>Inline CSS</h3>
+                            <p>
+                                Inline CSS is a easy and quick method of implementing CSS 
+                                and CSS rules that affect one html element. This is done via adding
+                                a style tag to the html tag; selectors mustnt be used. This method of
+                                implementing CSS allows you to easily test or preview any changes you
+                                you want to make to your website; also enables you to fix any errors or
+                                bugs quickly if needed. Furthermore, this can be done without the need
+                                for any external documents needing to be uploaded, unlike external css.   
+                            </p>
+                            <p>
+                                However, this method of implementing CSS should not be used throughout
+                                the html file as it will only set rules for one html element, so you would
+                                have to address each individual element, which is time consuming; makes the 
+                                structure of the document look unorganised and messy. Also, individually styling
+                                the elements will increase the webpages file size and increase the download times.
+                                Lastly, the inline css will only apply to the element upon that specific page,
+                                so if you used inline css for the navigation bar, only on that specific page the 
+                                rules will be applied to the navigation bar on one webpage.
+                            </p>
+                            <p>
+                                So, Inline CSS should only be used to test and preview any changes you want to make 
+                                to your document; quick-fix any errors or bugs that could be ocurring. 
+                            </p>
+                            <h3>Internal CSS</h3>
+                            <p>
+                                Internal CSS is an easy way of grouping various HTML elements via the use
+                                of ID selectors, and enable you to apply CSS rules to all the grouped elements.
+                                Inline CSS is implemented within the &lt;head&gt section with the use of the &lt;style&gt
+                                tag. This then allows you to add all the CSS code needed into just one HTML file, meaning
+                                you will not have to upload numerous files to display your webpage.
+                            </p>
+                            <p>
+                                The only issue with Internal CSS implementation is that, since you have added
+                                the code directly to the HTML file, it will increase the webpages size and 
+                                loading times. Furthermore, the number of lines will substantially increase, in
+                                the html file, making it harder to find specific parts of the code as the two 
+                                coding languages are not seperated. 
+                            </p>
+                            <p>
+                                In my opinion, you should only use Internal CSS if you want to apply CSS rules to 
+                                multiple HTML elements, that are specific to that webpage and not universally used 
+                                across the website, for example: the navigation bar should be created using 
+                                external CSS. 
+                            </p>
+                        </div>
+                    </div>
             </div>
         </div>    
 
         <div class="footer">
-            <p>This is Adam Dare's Website; if you use the content of this snippet
-                elsewhere, reference it. 
-            </p>
+            <h2>
+                Footer
+            </h2>
         </div>
 
 
