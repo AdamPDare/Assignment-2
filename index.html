@@ -74,43 +74,45 @@
                         <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
                     </div>
                 </div>
-                <div class="rightcolumn">
-                    <div class="card">
-                        <h2>Internal CSS</h2>
-                        <p>
-                            Internal CSS implementation is where the CSS code is 
-                            found within the header section of the HTML page and 
-                            within the style element. This CSS code will only 
-                            affect the design of the webpage they are implemented
-                            into; this method of implementing CSS allows you to use
-                            classes and IDs. This enables you to style and design 
-                            multiple HTML elements, on the webpage, without repeating
-                            lines of code as frequently. Also, using this method enables
-                            you to change the design of all the elements that are tagged
-                            on the webpage. 
-                            An example of Internal CSS is shown below and it is the class
-                            used to format the code snippets on my webpage:
-                        </p>
-                        <code>
-                            &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
-        <pre>
-            &lt;head&gt;
-                &lt;style&gt;
-                    code{
-                        font-family: monospace;
-                        color: chocolate;
-                                    
-                    } 
-                &lt;/style&gt;
-            &lt;/head&gt;
-
-                            </pre>
-
-                        </code>
-                        <p><a class="highlight" href="https://www.hostpapa.co.uk/knowledgebase/understanding-external-internal-inline-css-styles/">HostPapa Knowledgebase</a></p>
-                        <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
-
-                    </div>
+                <div class="row">
+                    <div class="rightcolumn">
+                        <div class="card">
+                            <h2>Internal CSS</h2>
+                            <p>
+                                Internal CSS implementation is where the CSS code is 
+                                found within the header section of the HTML page and 
+                                within the style element. This CSS code will only 
+                                affect the design of the webpage they are implemented
+                                into; this method of implementing CSS allows you to use
+                                classes and IDs. This enables you to style and design 
+                                multiple HTML elements, on the webpage, without repeating
+                                lines of code as frequently. Also, using this method enables
+                                you to change the design of all the elements that are tagged
+                                on the webpage. 
+                                An example of Internal CSS is shown below and it is the class
+                                used to format the code snippets on my webpage:
+                            </p>
+                            <code>
+                                &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
+            <pre>
+                &lt;head&gt;
+                    &lt;style&gt;
+                        code{
+                            font-family: monospace;
+                            color: chocolate;
+                                        
+                        } 
+                    &lt;/style&gt;
+                &lt;/head&gt;
+    
+                                </pre>
+    
+                            </code>
+                            <p><a class="highlight" href="https://www.hostpapa.co.uk/knowledgebase/understanding-external-internal-inline-css-styles/">HostPapa Knowledgebase</a></p>
+                            <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
+    
+                        </div>
+                </div>
                 </div>
                 <div class="leftcolumn">
                     <div class="card">
@@ -144,177 +146,42 @@
                         <p><a class="highlight" href="https://www.w3schools.com/html/html_css.asp#:~:text=An%20inline%20CSS%20is%20used,attribute%20of%20an%20HTML%20element.">w3schools</a></p>
                     </div>
                 </div>
-                <div class="leftcolumn">
+                <div class="rightcolumn">
                     <div class="card">
-                        <h2>Creating reactive Columns</h2>
+                        <h2>Assessment of CSS styles</h2>
+                        <h3>Inline CSS</h3>
                         <p>
-                            To create two reactive equal columns, on this webpage, I
-                            needed to set the width of each column to 50% and for both
-                            the columns to cover the whole webpage width. TO enable them
-                            to be reactive I used the @mediascreen feature which allowed me 
-                            to dictate whether the webpage will display both columns for people
-                            viewing the website on a PC or just one column for people using a 
-                            mobile phone. So the column positioning is affected by the 
-                            window size of the webpage allowing the website to be more 
-                            compatible with every device. 
-                            
+                            Inline CSS is a easy and quick method of implementing CSS 
+                            and CSS rules that affect one html element. This is done via adding
+                            a style tag to the html tag; selectors mustnt be used. This method of
+                            implementing CSS allows you to easily test or preview any changes you
+                            you want to make to your website; also enables you to fix any errors or
+                            bugs quickly if needed. Furthermore, this can be done without the need
+                            for any external documents needing to be uploaded, unlike external css.   
                         </p>
-                        <code>
-                            &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
-                            &lt;style&gt;<br>
-        <pre>
-    code{
-        .leftcolumn{
-        float:left;
-        width: 50%;
-            padding-left: 20px;
-            background-color: var(--main-bg-color);
-        }
-    
-        .rightcolumn{
-            float: left;
-            width: 50%;
-            background-color: var(--main-bg-color);
-            padding-left: 20px;
-        }
-    
-                
-    
-        .card{
-            background-color: white;
-            padding: 20px;
-            margin-top: 20px;
-    
-        }
-    
-        div.card:hover{
-            border: 5px solid var(--txt-border-color);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-    
-        .row::after{
-            content: "";
-            display: table;
-            clear: both;
-        }    
-        @media screen and (max-width: 800px){
-            .leftcolumn, .rightcolumn{
-                width: 100%;
-                padding: 0;
-            }
-    
-        }
-        
-                
-    }
-        </pre>
-                            &lt;style&gt;<br>
-                        
-                        </code>
+                        <p>
+                            However, this method of implementing CSS should not be used throughout
+                            the html file as it will only set rules for one html element, so you would
+                            have to address each individual element, which is time consuming; makes the 
+                            structure of the document look unorganised and messy. Also, individually styling
+                            the elements will increase the webpages file size and increase the download times.
+                            Lastly, the inline css will only apply to the element upon that specific page,
+                            so if you used inline css for the navigation bar, only on that specific page the 
+                            rules will be applied to the navigation bar on one webpage.
+                        </p>
+                        <p>
+                            So, Inline CSS should only be used to test and preview any changes you want to make 
+                            to your document; quick-fix any errors or bugs that could be ocurring. 
+                        </p>
                     </div>
                 </div>
                 
                 
+                
 
             
 
-            <div class="row">
-                <div class="rightcolumn">
-                    <div class="card">
-                        <h2>Navigation Bar with Dropdown</h2>
-                        <p>
-                        To create a navigation bar, I needed to used
-                        an unordered and normal list, the hover function and a
-                        dropdown button. These features allowed me to create a
-                        navigation bar that allows you to navigate each webpage
-                        on my website so far. 
-                        I also utilised the @mediascreen feature to allow the 
-                        navigation bars size change according to the size of
-                        the screen enabling my webpage to be used on a mobile 
-                        device.
-                        </p>
-                        <code>
-                            &lt;h3&gt;Code Extract&lt;/h3&gt;<br>
-                        &lt;style&gt;<br>
-    <pre>
-        ul{
-            list-style-type:none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: var(--main-bg-color);
-        }
-    
-        li{
-            float: left;      
-            border-right: 1px solid var(--txt-border-color);
-        }
-    
-        li a, .dropbtn{
-            display: inline-block;
-            color: var(--txt-border-color);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
             
-        }
-    
-        li a:hover:not(.active){
-            border-bottom: 3px solid var(--txt-border-color);
-            border-top: 2px solid var(--txt-border-color);
-    
-        }
-        li a:hover, .dropdown:hover .dropbtn{
-            border-bottom: 3px solid var(--txt-border-color);
-        }
-    
-        li.dropdown{
-            display: inline-block;
-        }
-    
-        .dropdown-content{
-            display: none;
-            position: absolute;
-            background-color: var(--main-bg-color);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-    
-        .dropdown-content a{
-            color:var(--txt-border-color);
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-    
-        .dropdown-content a:hover{
-            border-bottom: var(--txt-border-color);
-        }
-        .dropdown:hover .dropdown-content{
-            display: block;
-        }
-        @media screen and (max-width: 600px) {
-            .Navigation a{
-                float:none;
-                display: block;
-                width: 100%;
-                text-align: left;
-            }
-        }
-    
-    
-    
-    </pre>
-    </code>
-                </div>
-            </div>
-        </div>
-
-        
-            
-        </div>
 
         <div class="footer">
             <p>This is Adam Dare's Website; if you use the content of this snippet
