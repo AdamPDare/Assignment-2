@@ -2,6 +2,9 @@
     --main-bg-color:#0B0C10;
     --txt-border-color:#66FCF1;
 }
+a.highlight:hover{
+    color: aqua;
+}
 
 code{
     font-family: monospace;
