@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <title>Gallery</title>
+        <link href="layoutStyleSheet.css" rel="stylesheet">
+        <style>
+            div.gallery{
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                color: white;
+                
+            }
+            
+            
+            div.gallery:hover{
+                border: 1px solid #777;
+                
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            div.gallery img{
+                width:100%;
+                height: auto;
+            }
+            div.desc{
+                padding: 15px;
+                text-align: center;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            .responsive{
+                padding: 0 6px;
+                float:left;
+                width: 24.99999%;
+            }
+            .clearfix::after{
+                content:"";
+                display: table;
+                clear: both;
+
+            }
+            .opacityHover{
+                opacity: 0.5;
+            }
+            .opacityHover:hover{
+                opacity: 1.0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Adam Dare's Website</h1>
+        </div>
+
+        <div style="padding-left:16px"></div>
+
+        <div class="HorizontalNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pageStructures.html">Page Structure</a></li>
+                <li><a href="boxModel.html">Box Model</a></li>
+                <li><a href="classElements.html">Class Elements</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">DropDown</a>
+                    <div class="dropdown-content">
+                        <a href="navigationbarDropdownTrial.html">Transformations</a>
+                        <a href="transitions.html">Transitions</a>
+                        <a href="columnsPage.html">Columns page</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="verticalNav">
+            <a href="index.html">Home</a>
+            <a href="pageStructures.html">Page Structure</a>
+            <a href="boxModel.html">Box Model</a>
+            <a href="classElements.html">Class Elements</a>
+            <a href="form.html">Forms</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="navigationbarDropdownTrial.html">Transformations</a>
+            <a href="transitions.html">Transitions</a>
+            <a href="columnsPage.html">Columns page</a>
+        </div>
+
+        <div style="padding-left:16px">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="Mclaren f1 picture.png">
+                        <img src="Mclaren f1 picture.png" alt="Mclaren F1" width="600" height="400">
+                    </a>
+                    <div class="desc">Mclaren F1 picture photoshopped in Gimp</div>
+                </div>
+    
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="houghton hall finished.png">
+                        <img src="houghton hall finished.png" alt="Houhton Hall " width="600" height="400">
+                </a>
+                <div class="desc">Houghton Hall photoshopped in Gimp</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="postman pat.gif">
+                        <img src="postman pat.gif" alt="Postman pat" width="600" height="400">
+                </a>
+                <div class="desc">Postman pat</div>
+            </div>
+
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="lakeMountain.jpg">
+                    <div class="opacityHover">
+                        <img src="lakeMountain.jpg" alt="LakeMountain" width="600" height="400">
+                    </div>
+                </a>
+                <div class="desc">Lake Mountain</div>
+                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="cool-landscape-1.jpg">
+                    <div class="opacityHover">
+                        <img src="cool-landscape-1.jpg" alt="Planet" width="600" height="400">
+                    </div>
+                </a>
+                <div class="desc">Planet</div>
+                
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="cool-landscape-10-900x700.jpg">
+                    <div class="opacityHover">
+                        <img src="cool-landscape-10-900x700.jpg" alt="Rolling hills" width="600" height="400">
+                    </div>
+                </a>
+                <div class="desc">Rolling Hills</div>
+                
+            </div>
+        </div>
+
+    </body>
