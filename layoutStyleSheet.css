@@ -139,17 +139,12 @@ div.card:hover{
 
 .row::after{
     content: "";
+    padding: 20px;
     display: table;
     clear: both;
 }
 
-#page-container{
-    position: relative;
-    min-height:100vh;
-}
-#content-wrap{
-    padding-bottom: 2.5rem;
-}
+
 .footer{
     
    
@@ -166,6 +161,7 @@ div.card:hover{
    
     .HorizontalNav{
         display:block;
+        width: 100%;
     }
     .verticalNav{
         display: none;
@@ -176,7 +172,7 @@ div.card:hover{
      
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 800px){
     
     .overlay a{
         font-size: 20px;
