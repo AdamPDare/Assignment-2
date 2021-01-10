@@ -104,6 +104,70 @@ code{
 </pre>
                     </code>
                 </div>
+                <div class="card">
+                    <h2>Creating the gallery</h2>
+                    <p>
+                        To create a responsive gallery, I used multiple media queries
+                        in which re-arranged the images and the navigation bar to facilitate
+                        devices with a small sized screen. This allows the website to be 
+                        optimised for more devices and in turn appeal to a wider audience. 
+                        Furthermore, I added a description to each image to say what they were as well as 
+                        change the opactiy of three of the images when the mouse cursor is hovering over them.
+                        In the code extract below, it shows some of the CSS I used to create this gallery:
+        
+                    </p>
+                    <p><a class="highlight" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_image_gallery_responsive">w3schools</a></p>
+                    <code>
+<pre>
+        div.gallery{
+            border: 1px solid #ccc;
+            color: white;
+                            
+        }
+        div.gallery:hover{
+            border: 1px solid #777;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        div.gallery img{
+            width:100%;
+            height: auto;
+        }
+        div.desc{
+            padding: 15px;
+            text-align: center;
+        }
+        .responsive{
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+                            
+        @media only screen and (max-width: 700px){
+            .responsive{
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+                                
+            .footer{
+                width:100%;
+            }
+                                     
+        }
+                                
+        @media only screen and (max-width:500px){
+            .responsive{
+                width:100%;
+            }
+                                
+            .footer{
+                width:100%;
+            }
+                                     
+        }
+
+</pre>
+                    </code>
+                </div>
             </div>
             <div class="rightcolumn">
                 <div class="card">

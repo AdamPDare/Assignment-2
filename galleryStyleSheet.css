@@ -141,6 +141,10 @@ div.desc{
         margin: 6px 0;
     }
 
+    .card{
+        width: 100%;
+    }
+
     .footer{
         width:100%;
     }
@@ -155,6 +159,14 @@ div.desc{
     .footer{
         width:100%;
     }
+
+    .code{
+        font-size: 10px;
+    }
+    .card{
+        width: 100%;
+    }
+
      
 }
 
@@ -166,6 +178,10 @@ div.desc{
     }
     .verticalNav{
         display: none;
+    }
+
+    .card{
+        width: 800px;
     }
     .footer{
         width:100%;
@@ -186,6 +202,9 @@ div.desc{
         display:block;
         width: 100%
     
+    }
+    .card{
+        width: 800px;
     }
    
     .footer{
@@ -212,5 +231,26 @@ div.desc{
     content: "";
     display: table;
     clear: both;
+}
+
+.opacityHover{
+    opacity: 0.5;
+}
+.opacityHover:hover{
+    opacity: 1.0;
+}
+
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    
+    
+
+}
+
+div.card:hover{
+    border: 5px solid var(--txt-border-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
