@@ -12,6 +12,23 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
+
+                table{
+                    font-family: arial,sans-serif;
+                    border-collapse: collapse;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 50px;
+                    width: 50%;
+                }
+                td, th{
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding:8px;
+                }
+                tr:nth-child(even){
+                    background-color: #dddddd;
+                }
       
 
             </style>
@@ -140,14 +157,87 @@
                         <p>
                             Class Selectors are used to group/ select HTML elements and apply a specific
                             CSS rule or attribute. To create a Class selector in CSS you must use a full stop/ dot.
-                            This is shown in the code below:
+                            The code below, is the code is used to create the cards on this website:
                         </p>
                         <code>
 <pre>
+    .card{
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
     
+    }
 
 </pre>
                         </code>
+                        <h3>Universal Selectors</h3>
+                        <p>
+                            Universal Selectors are used to select every HTML element upon the webpage.
+                            To do this you use an asterisk * in the CSS code. This can be shown in the 
+                            code below:
+                        </p>
+                        <code>
+<pre>
+    *{
+        box-sizing: border-box;
+        background-color:red;
+    }
+
+</pre>
+                        </code>
+                        <h3>Grouping Selectors</h3>
+                        <p>
+                            Grouping selectors are used to group every HTML element that have the same
+                            style definitions/ element name. For example: h1,h2 or p. These selectors
+                            are shown in the code snippet below:
+                        </p>
+                        <code>
+<pre>
+    h1{
+        color: var(--txt-border-color);
+        text-align: center;
+        font: bold 200% fantasy;
+    }
+    
+    ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--main-bg-color);
+    }
+    li{
+        float: left;
+        border-right: 1px solid var(--txt-border-color);
+    }
+</pre>
+                        </code>
+                        <table>
+                            <tr>
+                                <th>Selector Type</th>
+                                <th>Syntax</th>
+                            </tr>
+                            <tr>
+                                <td>ID</td>
+                                <td>#id</td>
+                            </tr>
+                            <tr>
+                                <th>Class</th>
+                                <th>.Class</th>
+                            </tr>
+                            <tr>
+                                <th>Element Classes</th>
+                                <th>element.class</th>
+                            </tr>
+                            <tr>
+                                <th>Universal</th>
+                                <th>*</th>
+                            </tr>
+                            <tr>
+                                <th>Element</th>
+                                <th>elementname</th>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
