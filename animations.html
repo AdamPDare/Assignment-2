@@ -1,4 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <title>Animations</title>
+        <link href="layoutStyleSheet.css" rel="stylesheet">
+        <style>
+             #animationBox{
+                width: 100px;
+                height: 100px;
+                background: red;
+                margin: 20px;
+                position: relative;
+                animation: myFirst 5s linear 2s infinite alternate;
+            }
+            
+            @keyframes myFirst{
+                0% {background-color: red;left: 0px; top: 0px;}
+                25% {background-color: yellow;left: 200px; top: 0px;}
+                50% {background-color: blue;left: 200px; top: 200px;}
+                75% {background-color: green;left: 0px; top: 200px;}
+                100% {background-color: red;left: 0px; top: 0px;}
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div style="padding-left:16px"></div>
+        <div class="header">
+            <h1>Adam Dare's Website</h1>
+        </div>
+
+        <div class="HorizontalNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pageStructures.html">Page Structure</a></li>
+                <li><a href="boxModel.html">Box Model</a></li>
+                <li><a href="classElements.html">Class Elements</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">DropDown</a>
+                    <div class="dropdown-content">
+                        <a href="navigationbarDropdownTrial.html">Transformations</a>
+                        <a href="transitions.html">Transitions</a>
+                        <a href="columnsPage.html">Columns page</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="verticalNav">
+            <a href="index.html">Home</a>
+            <a href="pageStructures.html">Page Structure</a>
+            <a href="boxModel.html">Box Model</a>
+            <a href="classElements.html">Class Elements</a>
+            <a href="form.html">Forms</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="navigationbarDropdownTrial.html">Transformations</a>
+            <a href="transitions.html">Transitions</a>
+            <a href="columnsPage.html">Columns page</a>
+        </div>
+
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Animations</h2>
+                    <p>
+                        CSS animations enable you to gradually change the style of 
+                        a html element to another. This is done via the use of the 
+                        @keyframe rule. This is shown in the code extract below:
+                        
+                    </p>
+
+                    <code>
+                        &lt;style&gt;
+<pre>
+    #animationBox{
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: myFirst 5s linear 2s infinite alternate;
+    }
+                            
+    @keyframes myFirst{
+        0% {background-color: red;left: 0px; top: 0px;}
+        25% {background-color: yellow;left: 200px; top: 0px;}
+        50% {background-color: blue;left: 200px; top: 200px;}
+        75% {background-color: green;left: 0px; top: 200px;}
+        100% {background-color: red;left: 0px; top: 0px;}
+    }
+                        
+                        
+</pre>
+                    &lt;/style&gt;
+                    </code>
+                    <div id="animationBox">
+            
+                    </div>
+                    
+                    
+
+                    <p><a class="highlight" href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation4">W3schools Animation4</a></p>
+                </div>
+            </div>
+        </div>
+
+    </body>
 </html>
