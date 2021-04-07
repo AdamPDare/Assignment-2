@@ -1,255 +1,260 @@
 <!DOCTYPE html>
-<html>
-    <html lang="en">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width,intial-scale=1">
-            <title>Box Model</title>
-            <link href="layoutStyleSheet.css" rel="stylesheet">
-            <style>
-                img{
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <title>Box Model</title>
+        <link href="layoutStyleSheet.css" rel="stylesheet">
+        <style>
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-                table{
-                    font-family: arial,sans-serif;
-                    border-collapse: collapse;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 50px;
-                    width: 50%;
-                }
-                td, th{
-                    border: 1px solid #dddddd;
-                    text-align: left;
-                    padding:8px;
-                }
-                tr:nth-child(even){
-                    background-color: #dddddd;
-                }
-      
+            table{
+                font-family: arial,sans-serif;
+                border-collapse: collapse;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+                width: 50%;
+            }
+            td, th{
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding:8px;
+            }
+            tr:nth-child(even){
+                background-color: #dddddd;
+            }
+  
 
-            </style>
+        </style>
 
-        </head>
-        <body>
-            <div class="header">
-                <h1>Adam Dare's Website</h1>
-            </div>
-            <div class="HorizontalNav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pageStructures.html">Page Structure</a></li>
-                    <li><a href="boxModel.html">Box Model</a></li>
-                    <li><a href="classElements.html">Class Elements</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">DropDown</a>
-                        <div class="dropdown-content">
-                            <a href="navigationbarDropdownTrial.html">Transformations</a>
-                            <a href="transitions.html">Transitions</a>
-                            <a href="columnsPage.html">Columns page</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="verticalNav">
-                <a href="index.html">Home</a>
-                <a href="pageStructures.html">Page Structure</a>
-                <a href="boxModel.html">Box Model</a>
-                <a href="classElements.html">Class Elements</a>
-                <a href="form.html">Forms</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="navigationbarDropdownTrial.html">Transformations</a>
-                <a href="transitions.html">Transitions</a>
-                <a href="columnsPage.html">Columns page</a>
-            </div>
-
-            <div class="row">
-                <div class="leftcolumn">
-                    <div class="card">
-                        <h2>CSS Box Model</h2>
-                        <img src="cssboxmodel.png" alt="cssboxmodel"  style="width: 50%; ">
-                        <h3>What is the Box Model?</h3>
-                        <p>
-                            The CSS Box Model is the method used to design and layout the HTML elements 
-                            in a webpage, as all the HTML elements are considered as boxes. These boxes have
-                            four layers/ parts: the content, padding, border and the margin; the last three parts/layers 
-                            will encapsulate the actual content. The CSS code created will dictate the size, position
-                            and the properties of these CSS boxes allowing you to create an organised website layout.
-                        </p>
-                        <h3>What is the Content?</h3>
-                        <p>
-                            The content of the CSS box is the text, image or video that appears to the viewer/ user of the 
-                            website. For example, the diagram above. The size and color of the content box can be adjusted
-                            also.
-                        </p>
-                        <h3>What is the Padding?</h3>
-                        <p>
-                            The padding of the CSS box is the transparent area surrounding the content;
-                             is normally the same color as the content box.
-                            The size of this box can be adjusted by the programmer and it prevents the 
-                            content box from clashing and overlapping the border box and vice versa.
-                        </p>
-                        <h3>What is the Border?</h3>
-                        <p>
-                            The border can either be transparent or visible to the user; surrounds the padding and the content boxes. This allows
-                            the HTML elements visibly be seperated on the webpage. Borders can also be used to decorate the webpage.
-                        </p>
-                        <h3>What is the Margin?</h3>
-                        <p>
-                            The margin is the transparent outer box of the CSS box model and is the area that surrounds the border.
-                            This part of the CSS box is used to seperate each HTML element on the webpage, from
-                            each other, to prevent any clashes or overlapping.
-                        </p>
-                        <p><a class="highlight" href="https://www.w3schools.com/css/css_boxmodel.asp">w3schools</a></p>
-                        <p><a class="highlight" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Mozilla Developer</a></p>
-
-                        
-                        
-
+    </head>
+    <body>
+        <div class="header">
+            <h1>Adam Dare's Website</h1>
+        </div>
+        <div class="HorizontalNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pageStructures.html">Page Structure</a></li>
+                <li><a href="boxModel.html">Box Model</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Other CSS techniques</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="transitions.html">Transitions</a>
+                        <a href="animations.html">Animations</a>
                     </div>
-                </div>
-                <div class="rightcolumn">
-                    <div class="card">
-                        <h2>CSS Selectors</h2>
-                        <p>
-                            CSS selectors are used to select or find the HTML elements that you want
-                            to style or apply CSS rules to. These selectors also enable you to group
-                            the elements you want to style, reducing the amount of repeated code.
-                        </p>
-                        <h3>Element Selector</h3>
-                        <p>
-                            Element selectors enable you to select a specific html elements by the 
-                            elements name. For example: look at the code below:
-                        </p>
-                        <code>
-<pre>
-    h2{
-        color:aqua;
-        font-size:25px;
-        text-align:center;
-    }
+                </li>
+            </ul>
+        </div>
 
-</pre>
-                        </code>
-                        <h3>ID Selectors</h3>
-                        <p>
-                            ID Selectors will assign a unique ID attribute to an HTML element.
-                            This ID selector will be unique on that specific webpage; must only
-                            be used to select that specific element. To create a ID in CSS you use 
-                            a #. This is shown in the code below:
-                        </p>
-                        <code>
-<pre>
-    #paragraph1{
-        text-align: left;
-        font-size:15px;
-        color:white;
-    }
+        <div class="verticalNav">
+            <a href="index.html">Home</a>
+            <a href="pageStructures.html">Page Structure</a>
+            <a href="boxModel.html">Box Model</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="transitions.html">Transitions</a>
+            <a href="animations.html">Animations</a>
+        </div>
 
-</pre>
-                        </code>
-                        <h3>Class Selectors</h3>
-                        <p>
-                            Class Selectors are used to group/ select HTML elements and apply a specific
-                            CSS rule or attribute. To create a Class selector in CSS you must use a full stop/ dot.
-                            The code below, is the code is used to create the cards on this website:
-                        </p>
-                        <code>
-<pre>
-    .card{
-        background-color: white;
-        padding: 20px;
-        margin-top: 20px;
-    
-    }
+       
 
-</pre>
-                        </code>
-                        <h3>Universal Selectors</h3>
-                        <p>
-                            Universal Selectors are used to select every HTML element upon the webpage.
-                            To do this you use an asterisk * in the CSS code. This can be shown in the 
-                            code below:
-                        </p>
-                        <code>
-<pre>
-    *{
-        box-sizing: border-box;
-        background-color:red;
-    }
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>CSS Box Model</h2>
+                    <img src="cssboxmodel.png" alt="cssboxmodel"  style="width: 50%; ">
+                    <h3>What is the Box Model?</h3>
+                    <p>
+                        The CSS Box Model is the method used to design and layout the HTML elements 
+                        in a webpage, as all the HTML elements are considered as boxes. These boxes have
+                        four layers/ parts: the content, padding, border and the margin; the last three parts/layers 
+                        will encapsulate the actual content. The CSS code created will dictate the size, position
+                        and the properties of these CSS boxes allowing you to create an organised website layout.
+                    </p>
+                    <h3>What is the Content?</h3>
+                    <p>
+                        The content of the CSS box is the text, image or video that appears to the viewer/ user of the 
+                        website. For example, the diagram above. The size and color of the content box can be adjusted
+                        also.
+                    </p>
+                    <h3>What is the Padding?</h3>
+                    <p>
+                        The padding of the CSS box is the transparent area surrounding the content;
+                         is normally the same color as the content box.
+                        The size of this box can be adjusted by the programmer and it prevents the 
+                        content box from clashing and overlapping the border box and vice versa.
+                    </p>
+                    <h3>What is the Border?</h3>
+                    <p>
+                        The border can either be transparent or visible to the user; surrounds the padding and the content boxes. This allows
+                        the HTML elements visibly be seperated on the webpage. Borders can also be used to decorate the webpage.
+                    </p>
+                    <h3>What is the Margin?</h3>
+                    <p>
+                        The margin is the transparent outer box of the CSS box model and is the area that surrounds the border.
+                        This part of the CSS box is used to seperate each HTML element on the webpage, from
+                        each other, to prevent any clashes or overlapping.
+                    </p>
+                    <p><a class="highlight" href="https://www.w3schools.com/css/css_boxmodel.asp">w3schools</a></p>
+                    <p><a class="highlight" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">Mozilla Developer</a></p>
 
-</pre>
-                        </code>
-                        <h3>Grouping Selectors</h3>
-                        <p>
-                            Grouping selectors are used to group every HTML element that have the same
-                            style definitions/ element name. For example: h1,h2 or p. These selectors
-                            are shown in the code snippet below:
-                        </p>
-                        <code>
-<pre>
-    h1{
-        color: var(--txt-border-color);
-        text-align: center;
-        font: bold 200% fantasy;
-    }
-    
-    ul{
-        list-style-type:none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: var(--main-bg-color);
-    }
-    li{
-        float: left;
-        border-right: 1px solid var(--txt-border-color);
-    }
-</pre>
-                        </code>
-                        <table>
-                            <tr>
-                                <th>Selector Type</th>
-                                <th>Syntax</th>
-                            </tr>
-                            <tr>
-                                <td>ID</td>
-                                <td>#id</td>
-                            </tr>
-                            <tr>
-                                <th>Class</th>
-                                <th>.Class</th>
-                            </tr>
-                            <tr>
-                                <th>Element Classes</th>
-                                <th>element.class</th>
-                            </tr>
-                            <tr>
-                                <th>Universal</th>
-                                <th>*</th>
-                            </tr>
-                            <tr>
-                                <th>Element</th>
-                                <th>elementname</th>
-                            </tr>
-                        </table>
-                        <p><a class="highlight" href="https://www.w3schools.com/css/css_selectors.asp">w3schools</a></p>
-                        <p><a class="highlight" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">Mozilla Developer</a></p>
+                    
+                    
 
-                    </div>
                 </div>
             </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>CSS Selectors</h2>
+                    <p>
+                        CSS selectors are used to select or find the HTML elements that you want
+                        to style or apply CSS rules to. These selectors also enable you to group
+                        the elements you want to style, reducing the amount of repeated code.
+                    </p>
+                    <h3>Element Selector</h3>
+                    <p>
+                        Element selectors enable you to select a specific html elements by the 
+                        elements name. For example: look at the code below:
+                    </p>
+                    <code>
+<pre>
+h2{
+    color:aqua;
+    font-size:25px;
+    text-align:center;
+}
+
+</pre>
+                    </code>
+                    <h3>ID Selectors</h3>
+                    <p>
+                        ID Selectors will assign a unique ID attribute to an HTML element.
+                        This ID selector will be unique on that specific webpage; must only
+                        be used to select that specific element. To create a ID in CSS you use 
+                        a #. This is shown in the code below:
+                    </p>
+                    <code>
+<pre>
+#paragraph1{
+    text-align: left;
+    font-size:15px;
+    color:white;
+}
+
+</pre>
+                    </code>
+                    <h3>Class Selectors</h3>
+                    <p>
+                        Class Selectors are used to group/ select HTML elements and apply a specific
+                        CSS rule or attribute. To create a Class selector in CSS you must use a full stop/ dot.
+                        The code below, is the code is used to create the cards on this website:
+                    </p>
+                    <code>
+<pre>
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+</pre>
+                    </code>
+                    <h3>Universal Selectors</h3>
+                    <p>
+                        Universal Selectors are used to select every HTML element upon the webpage.
+                        To do this you use an asterisk * in the CSS code. This can be shown in the 
+                        code below:
+                    </p>
+                    <code>
+<pre>
+*{
+    box-sizing: border-box;
+    background-color:red;
+}
+
+</pre>
+                    </code>
+                    <h3>Grouping Selectors</h3>
+                    <p>
+                        Grouping selectors are used to group every HTML element that have the same
+                        style definitions/ element name. For example: h1,h2 or p. These selectors
+                        are shown in the code snippet below:
+                    </p>
+                    <code>
+<pre>
+h1{
+    color: var(--txt-border-color);
+    text-align: center;
+    font: bold 200% fantasy;
+}
+
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--main-bg-color);
+}
+li{
+    float: left;
+    border-right: 1px solid var(--txt-border-color);
+}
+</pre>
+                    </code>
+                    <table>
+                        <tr>
+                            <th>Selector Type</th>
+                            <th>Syntax</th>
+                        </tr>
+                        <tr>
+                            <td>ID</td>
+                            <td>#id</td>
+                        </tr>
+                        <tr>
+                            <th>Class</th>
+                            <th>.Class</th>
+                        </tr>
+                        <tr>
+                            <th>Element Classes</th>
+                            <th>element.class</th>
+                        </tr>
+                        <tr>
+                            <th>Universal</th>
+                            <th>*</th>
+                        </tr>
+                        <tr>
+                            <th>Element</th>
+                            <th>elementname</th>
+                        </tr>
+                    </table>
+                    <p><a class="highlight" href="https://www.w3schools.com/css/css_selectors.asp">w3schools</a></p>
+                    <p><a class="highlight" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">Mozilla Developer</a></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h2>
+                This is Adam Dare's Webpage. 
+            </h2>
+            <p>If you want to use any of the information provided</p>
+            <address>
+                Contact <a href="mailto:420874@edu.cwa.ac.uk">Adam Dare</a><br>
+            </address>
+        </div>
 
 
 
-            
-        </body>
         
+    </body>
+    
 
-    </html>
 </html>

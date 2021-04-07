@@ -165,6 +165,10 @@ div.desc{
     }
     .card{
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
      
