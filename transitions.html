@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <title>Transitions</title>
+        <link href="layoutStyleSheet.css" rel="stylesheet">
+        <style>
+            #transitionBox{
+                width:100px;
+                height:100px;
+                background:aqua;
+                transition: width 2s, height 4s;
+                
+            }
+            #transitionBox:hover{
+                width: 300px;
+                height:300px;
+            }
+            .leftcolumn, .rightcolumn{
+                color: black;
+            }
+            .timetransition{
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                background: aqua;
+                transition: width 4s;
+            }
+
+            #timetransition1{transition-timing-function: linear;}
+            #timetransition2{transition-timing-function: ease;}
+            #timetransition3{transition-timing-function: ease-in;}
+            #timetransition4{transition-timing-function: ease-out;}
+            #timetransition5{transition-timing-function: ease-in-out;}
+
+            .timetransition:hover{
+                width: 300px;
+            }
+
+            .transitionTransform{
+                width: 100px;
+                height: 100px;
+                background: aqua;
+                transition: width 2s, height 2s, transform 2s;
+            }
+            .transitionTransform:hover{
+                width: 300px;
+                height: 300px;
+                transform: rotate(180deg)
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div style="padding-left:16px"></div>
+        <div class="header">
+            <h1>Adam Dare's Website</h1>
+        </div>
+
+        <div class="HorizontalNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pageStructures.html">Page Structure</a></li>
+                <li><a href="boxModel.html">Box Model</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Other CSS techniques</a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="transitions.html">Transitions</a>
+                        <a href="animations.html">Animations</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="verticalNav">
+            <a href="index.html">Home</a>
+            <a href="pageStructures.html">Page Structure</a>
+            <a href="boxModel.html">Box Model</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="transitions.html">Transitions</a>
+            <a href="animations.html">Animations</a>
+        </div>
+
+        
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Basic Transitions</h2>
+                    <h3>What is a transition</h3>
+                    <p>
+                        CSS transitions are a method used to change a property value, of
+                        a HTML element over a period of time. There are multiple properties
+                        to transitions: delay, duration, timing and property. These allow
+                        you to customise the characteristics of the transition. 
+                    
+                    </p>
+                    <p><a class="highlight" href="https://www.w3schools.com/css/css3_transitions.asp">W3schools Transitions</a></p>
+                    <p>
+                        The example below shows a basic transition where the box size increases
+                        when you hover over it; will return to its original size afterwards.
+                    </p>
+                    <div id="transitionBox">
+
+                    </div>
+                    <p>The code snippet below, is how I created the basic transition</p>
+
+                    <code>
+                        &lt;style&gt;
+<pre>
+    
+    #transitionBox{
+        width:100px;
+        height:100px;
+        background:aqua;
+        transition: width 2s, height 4s;
+                                
+    }
+    #transitionBox:hover{
+        width: 300px;
+        height:300px;
+    }
+    
+    </pre>
+                &lt;/style&gt;
+                    </code>
+                    <p><a class="highlight" href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_transform">W3schools Basic Transition</a></p>
+
+
+                </div>
+                <div class="card">
+                    <h2>Transition and Transformation</h2>
+                    <div class="transitionTransform"></div>
+
+                </div>
+                
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>Timing Functions</h2>
+                    <p>All of the boxes below have different speed curves according to the timing function property</p>
+                    <div class="timetransition" id="timetransition1">Linear</div>
+                    <div class="timetransition" id="timetransition2">Ease</div>
+                    <div class="timetransition" id="timetransition3">Ease-In</div>
+                    <div class="timetransition" id="timetransition4">Ease-Out</div>
+                    <div class="timetransition" id="timetransition5">Ease-In-Out</div>
+                    <p>In the code extract below it shows how to apply the time function to the specific html element</p>
+
+                    <code>
+<pre>
+    #timetransition1{transition-timing-function: linear;}
+    #timetransition2{transition-timing-function: ease;}
+    #timetransition3{transition-timing-function: ease-in;}
+    #timetransition4{transition-timing-function: ease-out;}
+    #timetransition5{transition-timing-function: ease-in-out;}
+
+</pre>
+                    </code>
+
+                    <p><a class="highlight" href="https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition_speed">W3schools Time Function</a></p>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <h2>
+                This is Adam Dare's Webpage. 
+            </h2>
+            <p>If you want to use any of the information provided</p>
+            <address>
+                Contact <a href="mailto:420874@edu.cwa.ac.uk">Adam Dare</a><br>
+            </address>
+        </div>
+
+       
+
+    </body>
+</html>
